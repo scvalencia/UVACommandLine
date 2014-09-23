@@ -12,12 +12,46 @@ UVACommandLine
  * Fastest submission (non-interactive mode)
  * Implemented in [Python](https://www.python.org/) using a virtual env, so it's portable
  
-## Tutorial
+## Requirements
 
-When you run python uva.py in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account tuple (username, password)
+- Python 2.7 +
+- virualenv `pip install virtualenv`
 
+## Installation
+
+1.  Install [Python](https://www.python.org/) if you haven't.
+2.  Install [PIP](https://www.python.org/)
+2. `git clone https://github.com/lucastan/uva-node.git` (recommended) 
+    or download the source https://github.com/lucastan/uva-node/archive/master.zip
+3.  `node uva-node`
+
+Or via `npm`   
+<pre>
+npm install -g uva-node
+uva
+</pre>
+
+The program will generate a settings file and a random key file the first 
+time it is run. Please do not modify them manually. 
+
+It will use the key to encrypt all your account passwords.
+The key is stored at `~/.ssh/uva-node.key` where ~ is your home directory. 
+You don't have to generate 
+an SSH key nor will the program use your SSH key.
+Settings are saved in the JSON format at `~/.uva-node`. 
+
+To upgrade to the latest version, simply do `git pull` in the uva-node dir!
+
+There is an older version (uva-cli) written in Java at uva-cli.git, 
+but only this node.js version will be actively maintained. 
+ 
+## Usage
+
+When you run `python uva.py` in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account tuple (username, password)
     
 ![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Main_page.png)
+
+Once you are logged, you 
 
 One-time setup:
 <pre>
@@ -77,43 +111,9 @@ lucastan$
 
 
 
-## Requirements
 
-To run, you'd need node.js v0.10.0 and above. An older version might work
-although it has been tested only with v0.10.0
 
-To check your node.js version, do `node --version` at the command line.
 
-## Installation
-
-3 simple steps! No building required!
-
-1.  Install node.js if you haven't: http://nodejs.org
-2. `git clone https://github.com/lucastan/uva-node.git` (recommended) 
-    or download the source https://github.com/lucastan/uva-node/archive/master.zip
-3.  `node uva-node`
-
-Or via `npm`   
-<pre>
-npm install -g uva-node
-uva
-</pre>
-
-The program will generate a settings file and a random key file the first 
-time it is run. Please do not modify them manually. 
-
-It will use the key to encrypt all your account passwords.
-The key is stored at `~/.ssh/uva-node.key` where ~ is your home directory. 
-You don't have to generate 
-an SSH key nor will the program use your SSH key.
-Settings are saved in the JSON format at `~/.uva-node`. 
-
-To upgrade to the latest version, simply do `git pull` in the uva-node dir!
-
-There is an older version (uva-cli) written in Java at uva-cli.git, 
-but only this node.js version will be actively maintained. 
-
-## Usage
 
 UVA-NODE is an interactive shell (REPL) in which you can type commands 
 of the syntax: `<action> <arg1> <arg2> ...`
@@ -297,16 +297,22 @@ quit / exit
 Saves all settings including account info and exits the program.
 
 ## TODO
-- Log in only once instead of logging in on every send
-- Supports more coding websites
-- Auto-retry submitting the solution (when UVA is down)
-- Connects to UVAtoolkit
-- Get statistics on a problem
+- Use a queue of submissions whenever UVA is down
+- Get statistics of problem
+- Allow to edit a source in the program
+- Autodetect solution's file
+- Be able to run it without using `python uva.py`, just `uva`
+- Detect files in the current folder
+- Allow to read a problem from the command line
+- Allow to open a problem in the web-browser
+
 
 ## Credits
 - UVA website
 - uHunt API
-- node.js
+- Python
+- Universidad de los Andes
+- CCPL (Colombian Collegiate Programming League)
 
 ## Contributors
 
