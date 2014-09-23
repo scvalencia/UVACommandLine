@@ -20,10 +20,9 @@ UVACommandLine
 ## Installation
 
 1.  Install [Python](https://www.python.org/) if you haven't.
-2.  Install [PIP](https://www.python.org/)
-2. `git clone https://github.com/lucastan/uva-node.git` (recommended) 
-    or download the source https://github.com/lucastan/uva-node/archive/master.zip
-3.  `node uva-node`
+2.  Download this [file](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/src/get-pip.py) and run in the downloads folder the following command: `python get-pip.py`
+2. Download the client `git clone https://github.com/teamreactive/UVACommandLine` 
+3. Run the client: `cd UVACommandLine/UVACommandLine/src && python uva.py`
 
 Or via `npm`   
 <pre>
