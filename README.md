@@ -21,28 +21,12 @@ UVACommandLine
 
 1.  Install [Python](https://www.python.org/) if you haven't.
 2.  Download this [file](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/src/get-pip.py) and run in the downloads folder the following command: `python get-pip.py`
-2. Download the client `git clone https://github.com/teamreactive/UVACommandLine` 
-3. Run the client: `cd UVACommandLine/UVACommandLine/src && python uva.py`
+3. Download the client `git clone https://github.com/teamreactive/UVACommandLine`
+4. Activate the virtualenviroment `source UVACommandLine/UVACommandLine/bin/activate`
+4. Run the client: `cd UVACommandLine/UVACommandLine/src && python uva.py`
+5. Submit your solutions, view your statistics
 
-Or via `npm`   
-<pre>
-npm install -g uva-node
-uva
-</pre>
-
-The program will generate a settings file and a random key file the first 
-time it is run. Please do not modify them manually. 
-
-It will use the key to encrypt all your account passwords.
-The key is stored at `~/.ssh/uva-node.key` where ~ is your home directory. 
-You don't have to generate 
-an SSH key nor will the program use your SSH key.
-Settings are saved in the JSON format at `~/.uva-node`. 
-
-To upgrade to the latest version, simply do `git pull` in the uva-node dir!
-
-There is an older version (uva-cli) written in Java at uva-cli.git, 
-but only this node.js version will be actively maintained. 
+Soon: Installation via PIP: `pip install UVACommandLine`
  
 ## Usage
 
@@ -304,6 +288,9 @@ Saves all settings including account info and exits the program.
 - Detect files in the current folder
 - Allow to read a problem from the command line
 - Allow to open a problem in the web-browser
+- Background submission
+- Progress bar
+- Data encryption
 
 
 ## Credits
