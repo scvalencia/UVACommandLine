@@ -14,73 +14,10 @@ UVACommandLine
  
 ## Tutorial
 
-Given a React component with state like this:
+When you run python uva.py in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account tuple (username, password)
 
     
 ![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Main_page.png)
-
-
-    UVACommandLineClient's manual:
-  
-    Type submit to submit a problem.
-    Type msubs to see your submissions.
-    Type stats to see your statistics.
-    Type browse to browse a problem.
-    Type whoami to see the current user.
-    Type help to print this message.
-
-Construct a cursor:
-
-    var Cursor = require('path/to/react-cursor').Cursor;
-
-    var cursor = Cursor.build(this) // `this` is the React component's this pointer
-                                    // or the return value of React.renderComponent
-
-Cursors have `refine`, `value` and `onChange`:
-
-    cursor.refine('a').value            //=> 10
-    cursor.refine('a').onChange(11);
-    cursor.refine('b').refine('foo').value      //=> { 'bar': 42, baz: 55 }
-    cursor.refine('b').refine('foo').onChange({ 'bar': 43, baz: 56 })
-
-Cursors are heavily memoized to preserve reference equality between equivalent cursors, such that we can implement
-`React.shouldComponentUpdate` trivially and O(1):
-
-    shouldComponentUpdate: function (nextProps, nextState) {
-        return this.props.cursor !== nextProps.cursor;
-    }
-
-Due to the nature of React, this is a critical optimization when your application grows large. `react-cursor` provides this optimization as a mixin which can be used like so:
-
-`var ImmutableOptimizations = require('path/to/react-cursor').ImmutableOptimizations`
-
-see [ImmutableOptimizations.js](https://github.com/dustingetz/react-cursor/blob/master/src/ImmutableOptimizations.js).
-
-Cursors also have `pendingValue()` for use in event handlers. This solves the [double setState bug](https://github.com/facebook/react/issues/122).
-
-## Contributors
-
-The initial prototypes of `react-cursor` were pair programmed by [Dustin Getz](https://github.com/dustingetz) and [Daniel Miladinov](https://github.com/danielmiladinov). 
-
-## License
-
-_`react-cursor` is governed under the MIT License._
-
-Command line tool for the UVa Online Judge website
-
-UVA-NODE is an interactive shell where you can type commands to submit
-and check your submissions.
-
-Features
-========
-- **new** Opens questions in browser!
-- Remembers your account info and encrypts your passwords.
-- Password-less submissions.
-- Checks most recent submission status.
-- Template Support! 
-- File name completion and problem number detection 
-- Non-interactive mode 
-- Cross-platform: Linux, Mac OS X, Windows or whatever node.js runs on
 
 One-time setup:
 <pre>
@@ -138,15 +75,17 @@ Sub Id    | Prob # |      Verdict     |  Lang  | Runtime |  Rank |      Sub Time
 lucastan$
 </pre>
 
-Requirements
-============
+
+
+## Requirements
+
 To run, you'd need node.js v0.10.0 and above. An older version might work
 although it has been tested only with v0.10.0
 
 To check your node.js version, do `node --version` at the command line.
 
-Installation   
-============
+## Installation
+
 3 simple steps! No building required!
 
 1.  Install node.js if you haven't: http://nodejs.org
@@ -174,8 +113,8 @@ To upgrade to the latest version, simply do `git pull` in the uva-node dir!
 There is an older version (uva-cli) written in Java at uva-cli.git, 
 but only this node.js version will be actively maintained. 
 
-Usage
-=====
+## Usage
+
 UVA-NODE is an interactive shell (REPL) in which you can type commands 
 of the syntax: `<action> <arg1> <arg2> ...`
 
@@ -357,27 +296,25 @@ quit / exit
 -----------
 Saves all settings including account info and exits the program.
 
-More features coming soon
-==========================
+## TODO
 - Log in only once instead of logging in on every send
 - Supports more coding websites
 - Auto-retry submitting the solution (when UVA is down)
 - Connects to UVAtoolkit
 - Get statistics on a problem
 
-Credits
-=======
+## Credits
 - UVA website
 - uHunt API
 - node.js
 
-License
-=======
-I have yet to decide on a license to apply to the source code.
-Meanwhile, I reserve all copyrights.
+## Contributors
 
+The initial prototype of `UVACommandLine` were pair programmed by [Sebastian Valencia](https://github.com/scvalencia) and [Juan Bages](https://github.com/jcbages). 
 
-Please let me know if there is any problem!
+## License
+
+None
 
 
 
