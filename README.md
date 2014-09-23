@@ -57,12 +57,13 @@ Syntax: `msubs [itms]`
 
 Prints the list of latest submissions by the user, the list should contains itms files. If itms is omitted, the systems asks for the items that you want to include.
 
+![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Table.png)
 
 submit
 ----
 Syntax: `submit`
 
-Opens the problem webpage in the browser.
+Opens a dialog asking for the language, the problem, and the filename. It submit the solution iff UVA is available.
 
 quit / exit
 -----------
@@ -78,7 +79,7 @@ If you have use the system at least once, you an use it in non-interactive mode:
 ## TODO
 - Use a queue of submissions whenever UVA is down
 - Get statistics of problem
-- Allow to edit a source in the program
+- Allow to edit a source in the program (Calling an editor, [vim](http://stackoverflow.com/questions/6309587/call-up-an-editor-vim-from-a-python-script), emacs, sublime, atom, ...)
 - Autodetect solution's file
 - Be able to run it without using `python uva.py`, just `uva`
 - Detect files in the current folder
@@ -89,6 +90,14 @@ If you have use the system at least once, you an use it in non-interactive mode:
 - Data encryption
 - Improve non-interactive mode
 - Improve performance
+- Muli-user enviroment (shared resources)
+- Switch user account
+- Sets a user account as current
+- List all users
+- Non-interactive mode submission
+- Log in only once instead of logging in on every send
+- Auto-retry submitting the solution (when UVA is down)
+- Connects to UVAtoolkit
 
 ## Credits
 - UVA website
