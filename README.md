@@ -16,22 +16,18 @@ UVACommandLine
 
 Given a React component with state like this:
 
-    var App = React.createClass({
-        getInitialState: function () {
-            return {
-                "a": 10,
-                "b": {
-                    "foo": {
-                        "bar": 42,
-                        "baz": 55
-                    }
-                }
-            };
-        },
-        render: function () {
-            return <pre>{JSON.stringify(this.state, undefined, 2)}</pre>;
-        }
-    });
+    
+
+
+
+    UVACommandLineClient's manual:
+  
+    Type submit to submit a problem.
+    Type msubs to see your submissions.
+    Type stats to see your statistics.
+    Type browse to browse a problem.
+    Type whoami to see the current user.
+    Type help to print this message.
 
 Construct a cursor:
 

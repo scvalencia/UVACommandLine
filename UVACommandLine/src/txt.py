@@ -2,7 +2,7 @@ from fabric import colors
 
 VERSION = '1.2'
 YEAR = '2014'
-AUTHORS = 'Juan Camilo Bages, Sebastian Valencia'
+AUTHORS = 'Reactive Team'
 params = {"version" : VERSION, "year" : YEAR, "authors" : AUTHORS}
 
 HEADER = '''
