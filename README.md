@@ -17,7 +17,7 @@ UVACommandLine
 Given a React component with state like this:
 
     
-
+![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Main_page.png)
 
 
     UVACommandLineClient's manual:
