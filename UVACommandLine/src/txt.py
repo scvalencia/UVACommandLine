@@ -8,7 +8,7 @@ params = {"version" : VERSION, "year" : YEAR, "authors" : AUTHORS}
 HEADER = '''
 \033[35m .----------------.  .----------------.  .----------------.\033[0m  
 \033[35m| .--------------. || .--------------. || .--------------. |\033[0m   UVAcl %(version)s
-\033[35m| | _____  _____ | || | ____   ____  | || |      __      | |\033[0m   Copyright (c) %(authors)s %(year)s
+\033[35m| | _____  _____ | || | ____   ____  | || |      __      | |\033[0m   Copyleft %(authors)s %(year)s
 \033[35m| ||_   _||_   _|| || ||_  _| |_  _| | || |     /  \     | |\033[0m   This is free software.
 \033[35m| |  | |    | |  | || |  \ \   / /   | || |    / /\ \    | |\033[0m   There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
 \033[35m| |  | '    ' |  | || |   \ \ / /    | || |   / ____ \   | |\033[0m   PARTICULAR PURPOSE.
