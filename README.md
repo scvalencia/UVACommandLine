@@ -98,6 +98,7 @@ If you have use the system at least once, you an use it in non-interactive mode:
 - Log in only once instead of logging in on every send
 - Auto-retry submitting the solution (when UVA is down)
 - Connects to UVAtoolkit
+- Improve security
 
 ## Credits
 - UVA website
