@@ -101,6 +101,11 @@ def main():
 				possible = distances[minimum]
 				print txt.WRONG_COMMAND , possible
 
+
+
+				# Remove user file, if temp session
+				# TODO
+
 		print txt.FINAL_MESSAGE
 
 	elif count > 1:
