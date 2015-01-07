@@ -109,7 +109,7 @@ If you have use the system at least once, you an use it in non-interactive mode:
 
 ## Contributors
 
-The initial prototype of `UVACommandLine` was programmed by [Sebastian Valencia](https://github.com/scvalencia). 
+The initial prototype of `UVACommandLine` was pair programmed by [Sebastian Valencia](https://github.com/scvalencia) and [Juan Camilo Bages] (https://github.com/jcbages). 
 
 ## License
 
