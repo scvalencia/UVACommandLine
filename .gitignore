@@ -1,3 +1,4 @@
-/UVACommandLine/src/user_info
-UVACommandLine/bin/
-UVACommandLine/lib/*
+src/user_info
+bin/
+lib/
+src/*.pyc
