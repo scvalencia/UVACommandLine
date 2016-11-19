@@ -32,7 +32,7 @@ Soon: Installation via PIP: `pip install UVACommandLine`
 
 When you run `python uva.py` in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account tuple (username, password)
     
-![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Main_page.png)
+![alt tag](docs/Main_page.png)
 
 Once you are logged, you can type:
 
@@ -57,7 +57,7 @@ Syntax: `msubs [itms]`
 
 Prints the list of latest submissions by the user, the list should contains itms files. If itms is omitted, the systems asks for the items that you want to include.
 
-![alt tag](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/docs/Table.png)
+![alt tag](docs/Table.png)
 
 submit
 ----
