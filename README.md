@@ -1,6 +1,6 @@
 UVACommandLine
 ==============
-`UVACommandLine` is an interactive command line utility to submit solutions to the UVA online judge, it also allows to check submissions and other statistics.
+`UVACommandLine` is an interactive command line utility to submit solutions to the UVA online judge, and visualize submission statistics.
 
 ## Features
 
@@ -10,7 +10,7 @@ UVACommandLine
  * Remembers your account (username, id, password)
  * Check history of submissions
  * Fastest submission (non-interactive mode)
- * Implemented in [Python](https://www.python.org/) using a virtual env, so it's portable
+ * Implemented in [Python](https://www.python.org/) using a virtualenv, so it's portable
  
 ## Requirements
 
@@ -22,22 +22,17 @@ UVACommandLine
 1.  Install [Python](https://www.python.org/) if you haven't.
 2.  Download this [file](https://raw.githubusercontent.com/teamreactive/UVACommandLine/master/UVACommandLine/src/get-pip.py) and run in the downloads folder the following command: `python get-pip.py`
 3. Download the client `git clone https://github.com/teamreactive/UVACommandLine`
-4. Activate the virtualenviroment `source UVACommandLine/UVACommandLine/bin/activate`
-4. Run the client: `cd UVACommandLine/UVACommandLine/src && python uva.py`
+4. Activate the virtualenviroment `source bin/activate`
+4. Run the client: `python uva.py`
 5. Submit your solutions, view your statistics
-
-Soon: Installation via PIP: `pip install UVACommandLine`
  
 ## Usage
 
-When you run `python uva.py` in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account tuple (username, password)
+When you run `python uva.py` in the current virtuel enviroment, and you are not logged, you get a prompt to enter your account credentials (username, password)
     
 ![alt tag](docs/Main_page.png)
 
-Once you are logged, you can type:
-
-
-
+Once you are logged, you can type one of the currently supported commands:
 
 help
 -------------
@@ -80,7 +75,6 @@ If you have use the system at least once, you an use it in non-interactive mode:
 - Use a queue of submissions whenever UVA is down
 - Get statistics of problem
 - Allow to edit a source in the program (Calling an editor, [vim](http://stackoverflow.com/questions/6309587/call-up-an-editor-vim-from-a-python-script), emacs, sublime, atom, ...)
-- Autodetect solution's file
 - Be able to run it without using `python uva.py`, just `uva`
 - Detect files in the current folder
 - Allow to read a problem from the command line
@@ -90,21 +84,16 @@ If you have use the system at least once, you an use it in non-interactive mode:
 - Data encryption
 - Improve non-interactive mode
 - Improve performance
-- Muli-user enviroment (shared resources)
-- Switch user account
-- Sets a user account as current
-- List all users
-- Non-interactive mode submission
-- Log in only once instead of logging in on every send
+- Muli-user environment (shared resources)
 - Auto-retry submitting the solution (when UVA is down)
-- Connects to UVAtoolkit
+- Connect to UVAtoolkit
 - Improve security
 
 ## Credits
 - UVA website
 - uHunt API
 - Python
-- Universidad de los Andes
+- Universidad de los Andes, Bogotá-Colombia
 - CCPL (Colombian Collegiate Programming League)
 
 ## Contributors
@@ -113,7 +102,7 @@ The initial prototype of `UVACommandLine` was pair programmed by [Sebastian Vale
 
 ## License
 
-None
+See LICENSE file for information.
 
 
 
