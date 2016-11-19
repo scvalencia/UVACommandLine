@@ -1,5 +1,2 @@
-src/user_info
-bin/
-lib/
-include/
 src/*.pyc
+user_info
